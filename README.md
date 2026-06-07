@@ -55,3 +55,6 @@ Generate a single random UUID v4.
 
 ## Authentication
 All endpoints except `/health` require `X-API-Key` header with value `demo-key-change-in-production`.
+
+## Postman
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://raw.githubusercontent.com/BT-Builds/uuid-api/main/postman_collection.json)
