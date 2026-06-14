@@ -81,6 +81,43 @@
       }
     },
     {
+      "name": "Validate Uuids Bulk",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-API-Key",
+            "value": "{{api_key}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/bulk/validate",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "bulk",
+            "validate"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"items\": 0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
       "name": "Generate Uuids",
       "request": {
         "method": "POST",
@@ -108,6 +145,43 @@
         "body": {
           "mode": "raw",
           "raw": "{\n  \"version\": \"\",\n  \"count\": 0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Generate Uuids Bulk",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-API-Key",
+            "value": "{{api_key}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "{{base_url}}/bulk/generate",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "bulk",
+            "generate"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"items\": 0\n}",
           "options": {
             "raw": {
               "language": "json"
